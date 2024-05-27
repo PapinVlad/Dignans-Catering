@@ -1,0 +1,234 @@
+/* ......//about us//...... */
+
+#about {
+    padding: 50px ;
+    
+  }
+  
+  .about-wrapper {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #about h2 {
+    font-size: 2.3rem;
+  }
+  
+  #about p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  #about .small {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 600;
+  }
+  .about-text h2{
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  .about-img {
+    flex: 1 1 400px;
+    padding: 30px;
+    transform: translateX(150%);
+    animation: about-img-animation 2s ease-in-out forwards;
+    
+  }
+  .showcase-area{
+    overflow: hidden;
+    height: 65vh;
+
+  }
+.showcase-container{
+    padding: 60px;
+}
+  .showcase_container{
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+  }
+  .bread{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .bread_text{
+    display: flex;
+    gap: 0.5rem;
+    color: #121212;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+  .bread_link{
+    color: #121212;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+  }
+  .bread_secondLing{
+    display: flex;
+    gap: 0.5rem;
+    color: #121212;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+  }
+  .bread_secondLing_link{
+    color: #121212;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+  }
+  .showcase_container_head{
+    display: flex;
+    flex-direction: column;
+    color: #121212;
+    gap: 1rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+  }
+  .showcase_container_head_h1{
+    
+    color: #121212;
+    font-weight: 400;
+    font-size: clamp(2.5rem,calc(5vw + 1rem),5rem);
+    line-height: clamp(2.5rem,calc(5vw + 1rem),5rem);
+    text-align: center;
+  }
+  .showcase_container_text{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  .showcase_image_cont{
+    position: relative;
+    width: 20rem;
+    height: 15rem;
+  }
+  .show_im{
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    aspect-ratio: 400 / 300;
+    position: absolute;
+    top: 2.8125rem;
+    left: 50%;
+    rotate: 5deg;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+.show_im img{
+    color: transparent;
+    height: auto;
+    max-width: 100%;
+}
+  
+  
+  @keyframes about-img-animation {
+    100% {
+      transform: translate(0);
+    }
+  }
+  
+  .about-text {
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    transform: translate(-150%);
+    animation: about-text-animation 2s ease-in-out forwards;
+  }
+  .about-img img{
+    width: 100%;
+    
+}
+  
+  @keyframes about-text-animation {
+    100% {
+      transform: translate(0);
+    }
+  }
+  
+  .about-img img {
+    display: block;
+    
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  @media (min-width: 769px){
+    .about-wrapper_cont{
+        display: flex;
+        flex-direction: row;
+    }
+    .about-wrapper_cont:nth-child(2){
+    flex-direction: row-reverse;
+    }
+    .about-text{
+        
+    flex-direction: column;
+    display: flex;
+    gap: 25px;
+
+    }
+    .about-img img{
+        width: 20.4375rem;
+        height: 13.625rem;
+    }
+    .showcase-container{
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .showcase_container{
+        min-width: 20rem;
+        max-width: 62.5%;
+    }
+    .bread{
+        justify-content: flex-start;
+    }
+    .showcase_container_head{
+        gap: 2rem;
+    }
+    .showcase_container_head_h1{
+        text-align: left;
+    }
+    .showcase_container_text{
+        text-align: left;
+    }
+    .showcase_image_cont{
+        min-width: 20.75rem;
+        height: 22.5rem;
+    }
+    .show_im{
+        top: unset;
+        left: 12.5%;
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+  }
+  @media (min-width: 1000px){
+    .about-img img{
+        width: 25rem;
+        height: 15rem;
+    }
+    .showcase_image_cont{
+        min-width: 25rem;
+        height: 25.5rem;
+    }
+    
+}
+  
+

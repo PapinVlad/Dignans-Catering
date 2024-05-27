@@ -1,0 +1,186 @@
+img{
+    height: auto;
+    max-width: 100%;
+}
+
+.mainHeader{
+    background-color: rgb(205, 223, 249);
+    padding: 50px;
+}
+.mainHeader h1{
+    
+    font-size: 4.5rem;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+    color: rgb(37, 52, 105);
+    padding-left: 3rem;
+    padding-top: 2rem;
+}
+.letsTalk{
+    background-color: rgb(255, 255, 255);
+    padding: 3rem;
+    border-bottom: 1px solid rgb(186, 200, 219);
+    color: rgb(37, 52, 105);
+}
+.letsTalk_text_container{
+    flex: 1 1 0%;
+}
+.letsTalk_text_heading{
+    font-size: 1.75rem;
+    line-height: 3.75rem;
+    margin-bottom: 0.5rem;
+    color: rgb(37, 52, 105);
+}
+.letsTalk_text_p{
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+.letsTalk_container_button{
+    margin-top: auto;
+}
+.letsTalk_container_button_btn{
+    align-items: center;
+    appearance: unset;
+    background: #2071E9;
+    border: 0.125rem solid #2071E9;
+    border-radius: 1.5rem;
+    color: #FFFFFF;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    max-width: 100%;
+    outline: none;
+    padding: 0.625rem 0.9375rem;
+    width: auto;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    cursor: pointer;
+}
+.letsTalk_container_button_btn:hover{
+    background: #135AC3;
+  transition: background 0.3s ease-in-out;
+}
+.css-1fh9pz4{
+    color: #FFFFFF;
+    fill: #FFFFFF;
+    display: inline-block;
+    height: 1.5rem;
+}
+.btn_span{
+    max-width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+}
+.letsTalk_container_button_txt{
+    color: rgb(18, 18, 18);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    margin-top: 1rem;
+}
+.contactInfo_container_card{
+    background-color: rgb(255, 255, 255);
+    padding: 3rem 2rem;
+    color: rgb(37, 52, 105);
+    text-align: left;
+    flex-grow: 1;
+
+}
+.contactInfo_container_card div{
+    margin-bottom: 1.25rem;
+}
+.css-1jdv209{
+    color: rgb(37, 52, 105);
+    fill: rgb(37, 52, 105);
+    display: inline-block;
+    height: 4.375rem;
+    
+}
+.contactInfo_container_card_heading{
+    font-size: 3rem;
+    line-height: 2.5rem;
+    color: rgb(37, 52, 105);
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+}
+.contactInfo_container_card_text{
+    text-align: left;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(37, 52, 105);
+    margin: 0.625rem auto;
+    padding: 0px;
+}
+.contactInfo_container_card_text_par a {
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+    font-weight: 600;
+    font-style: normal;
+}
+.contactInfo_container_card_text_par p {
+    padding: 0px;
+    margin: 0.625rem auto;
+}
+
+@media (min-width: 769px){
+    .letsTalk {
+        display: flex;
+        gap: 2.5rem;
+        flex-direction: row-reverse;
+    }
+    .contactInfo_container{
+        display: flex;
+        overflow: hidden;
+        width: 100%!important;
+        
+    }
+    .contactInfo_container_card{
+        text-align: center;
+        padding: 2.25rem 2rem;
+        
+    }
+    
+}
+@media (min-width: 1000px){
+    .cont{
+        padding: 5rem;
+        background-color: rgb(205, 223, 249);
+    }
+    .mainHeader h1{
+        font-size: 5rem;
+        padding-left: 0px;
+    }
+    .letsTalk{
+        border-bottom: none;
+        border-radius: 0.625rem;
+        margin-bottom: 2rem!important;
+    }
+    .letsTalk_text_heading{
+        font-size: 3.75rem;
+    }
+    
+    .letsTalk_container_button{
+        margin-bottom: 3.125rem;
+    }
+    .letsTalk_container_button_txt{
+        margin-bottom: 3.125rem;
+        text-align: left;
+    }
+    .contactInfo_container{
+        gap: 2.5rem;
+    }
+    .contactInfo_container_card{
+        border-radius: 0.625rem;
+        padding: 4rem 2rem;
+    }
+    
+    
+
+}
+
+
