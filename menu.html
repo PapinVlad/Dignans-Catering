@@ -228,7 +228,7 @@
         <h2 class="download-menu-heading">Or you can download the full menu from this link - there's even more interesting stuff</h2>
         <div class="download-menu-container">
           <a href="./Appendix 2  - The menu (1).docx" class="btn btn-primary download-btn">Download Full Menu</a>
-          <button class="btn btn-primary print-btn" onclick="printDocument()">Print Menu</button>
+          <button class="btn btn-primary print-btn" onclick="openAndPrintDocument()">Print Menu</button>
         </div>
       </section>
   
@@ -349,9 +349,12 @@
       });
     });
     
-    function printDocument() {
-    window.print();
-    }
+    function openAndPrintDocument() {
+    let printWindow = window.open('./full_menu.docx');
+    printWindow.onload = function() {
+      printWindow.print();
+    };
+  }
 
   </script>
 </html>
