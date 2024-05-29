@@ -55,7 +55,7 @@
     background-color: #135ac3;
   }
   
-  /* Responsive Styles */
+  
   @media (min-width: 768px) {
     .book-now {
       padding: 3rem 2rem;

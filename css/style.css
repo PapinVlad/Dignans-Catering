@@ -1,8 +1,8 @@
 
 
-/* ..........////Food category///........... */
+/* ..........////differentSection category///........... */
 
-#food {
+#differentSection {
   padding: 5rem 0 10rem 0;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-#food h2 {
+#differentSection h2 {
   color: #121212;
   font-size: 5rem;
   font-weight: 400;
@@ -23,13 +23,13 @@
   line-height: clamp(2rem,calc(4vw + 1rem),3.75rem);
 }
 
-.food-container {
+.differentSection-container {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.food-container img {
+.differentSection-container img {
   display: block;
   width: 100%;
   margin: auto;
@@ -96,120 +96,7 @@ border-radius: 15px;
 
 
 
-/* .........../Food Menu/............ */
 
-
-
-/* ........./ Testimonial /.......... */
-
-#testimonials {
-  padding: 5rem 0;
-  background: rgba(243, 243, 243);
-}
-
-.testimonial-title {
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 400;
-  color: #555;
-}
-
-.testimonial-container {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.4rem;
-  padding: 1rem;
-}
-
-.testimonial-box .checked {
-  color: #ff9529;
-}
-
-.testimonial-box .testimonial-text {
-  margin: 1rem 0;
-  color: #444;
-}
-
-.testimonial-box {
-  text-align: center;
-  padding: 1rem;
-}
-
-.customer-photo img {
-  display: block;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 50%;
-  margin: auto;
-}
-
-/* ........ Contact Us........... */
-
-#contact {
-  padding: 5rem 0;
-  background: rgb(226, 226, 226);
-}
-
-.contact-container {
-  display: flex;
-  background: #fff;
-}
-
-.contact-img {
-  width: 50%;
-}
-
-.contact-img img {
-  display: block;
-  height: 400px;
-  width: 100%;
-  object-position: center;
-  object-fit: cover;
-}
-
-.form-container {
-  padding: 1rem;
-  width: 50%;
-  margin: auto;
-}
-
-.form-container input {
-  display: block;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #ddd;
-  padding: 1rem 0;
-  box-shadow: none;
-  outline: none;
-  margin-bottom: 1rem;
-  color: #444;
-  font-weight: 500;
-}
-
-.form-container textarea {
-  display: block;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #ddd;
-  color: #444;
-  outline: none;
-  padding: 1rem 0;
-  resize: none;
-}
-
-.form-container h2 {
-  font-size: 2.7rem;
-  font-weight: 500;
-  color: #444;
-  margin-bottom: 1rem;
-  margin-top: -1.2rem;
-}
-
-.form-container a {
-  font-size: 1.3rem;
-}
 
 /* ........ Advantage section........... */
 
@@ -454,132 +341,8 @@ border-radius: 15px;
 
 /* ......../ media query /.......... */
 
-@media (max-width: 1000px) {
-  
-  .navbar {
-    opacity: 0.95;
-  }
 
-  .navbar-container input[type="checkbox"],
-  .navbar-container .hamburger-lines {
-    display: block;
-  }
-
-  .navbar-container {
-    display: block;
-    position: relative;
-    height: 64px;
-  }
-
-  .navbar-container input[type="checkbox"] {
-    position: absolute;
-    display: block;
-    height: 32px;
-    width: 30px;
-    top: 20px;
-    left: 20px;
-    z-index: 5;
-    opacity: 0;
-  }
-
-  .navbar-container .hamburger-lines {
-    display: block;
-    height: 23px;
-    width: 35px;
-    position: absolute;
-    top: 17px;
-    left: 20px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .navbar-container .hamburger-lines .line {
-    display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 10px;
-    background: #333;
-  }
-
-  .navbar-container .hamburger-lines .line1 {
-    transform-origin: 0% 0%;
-    transition: transform 0.4s ease-in-out;
-  }
-
-  .navbar-container .hamburger-lines .line2 {
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .navbar-container .hamburger-lines .line3 {
-    transform-origin: 0% 100%;
-    transition: transform 0.4s ease-in-out;
-  }
-
-  .navbar .menu-items {
-    padding-top: 100px;
-    background: #fff;
-    height: 100vh;
-    max-width: 300px;
-    transform: translate(-150%);
-    display: flex;
-    flex-direction: column;
-    margin-left: -40px;
-    padding-left: 50px;
-    transition: transform 0.5s ease-in-out;
-    box-shadow: 5px 0px 10px 0px #aaa;
-  }
-
-  .navbar .menu-items li {
-    margin-bottom: 1.5rem;
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
-
-  .logo {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    font-size: 2rem;
-  }
-
-  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
-    transform: translateX(0);
-  }
-
-  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-    transform: rotate(35deg);
-  }
-
-  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-    transform: scaleY(0);
-  }
-
-  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-    transform: rotate(-35deg);
-  }
-}
-  /* ......./ food /......... */
-  /* @media (max-width: 1000px){
-  .food-container {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .food-type:not(:last-child) {
-    margin-bottom: 3rem;
-  }
-
-  .food-type {
-    box-shadow: 5px 5px 10px 0 #aaa;
-    border-radius: 15px;
-  }
-
-  .img-container {
-    margin: 0;
-  }
-} */
+ 
 @media (max-width: 760px){
   .carousel{
     display: block;
@@ -618,13 +381,13 @@ border-radius: 15px;
     width: 100%;
     height: auto;
   }
-  .food-container {
+  .differentSection-container {
     
     align-items: center;
     width: 35vw;
 
   }
-  .food-type {
+  .differentSection-type {
     width: 100%;
   }
 }

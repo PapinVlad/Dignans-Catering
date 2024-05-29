@@ -113,18 +113,21 @@
   .download-menu-container {
     display: flex;
     justify-content: center;
+    gap: 1rem;
   }
   
-  .download-btn {
+  .download-btn, .print-btn {
     background-color: #2071E9;
     color: #fff;
     padding: 1rem 2rem;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
   }
   
-  .download-btn:hover {
+  .download-btn:hover, .print-btn:hover {
     background-color: #005bb5;
   }
   .showcase-area{
